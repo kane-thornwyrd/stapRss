@@ -1,0 +1,24 @@
+{
+  "name" : "stapRss",
+  "description" : "Serverless, decentralized, rss reader",
+  "version" : "0.1",
+  "main" : "stapRss.js",
+  "author" : {
+    "name" : "Jean-Cédric Thérond",
+    "email" : "jean.cedric.t@gmail.com"
+  },
+  "keywords" : [ "Serverless", "decentralized", "rss reader", "google reader", "replacement" ],
+  "licenses" : {
+    "type" : "default"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git://github.com/kane-thornwyrd/stapRss.git"
+  },
+  "bugs" : {
+    "web" : "http://github.com/kane-thornwyrd/stapRss/issues"
+  },
+  "license" : {
+    "type" : "gplv3"
+  }
+}
