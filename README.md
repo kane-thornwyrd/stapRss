@@ -1,4 +1,4 @@
-![StapRss](http://kane-thornwyrd.github.com/stapRss/img/logo.png)[![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)
+![StapRss](http://kane-thornwyrd.github.com/stapRss/img/logo.png)[![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)[![Dependency Status](https://gemnasium.com/kane-thornwyrd/stapRss.png)](https://gemnasium.com/kane-thornwyrd/stapRss)
 =======
 Serverless, decentralized, rss reader.
 For the people that are lazy enough to avoid using a fullblown software. ;)
@@ -36,7 +36,7 @@ It indicate that the application is crashed because I'm developping/modifying
 stuffs inside and broke something.
 If it's not "build failing", that's not from my side, in this case you can
 search an issue that look like your situation, and if I have some time/motivation
-and I can, I'll fix the problem...  
+and I can, I'll fix the problem...
 But beware:
 
 1. I use it ! So I'm motivated to get it working.
