@@ -1,4 +1,4 @@
-stapRss  [![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)
+![StapRss](http://kane-thornwyrd.github.com/stapRss/img/logo.png)[![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)
 =======
 Serverless, decentralized, rss reader.
 For the people that are lazy enough to avoid using a fullblown software. ;)
