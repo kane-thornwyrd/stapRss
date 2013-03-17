@@ -1,4 +1,17 @@
-stapleRss [![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)
-=========
+stapRss  [![Build Status](https://travis-ci.org/kane-thornwyrd/stapRss.png?branch=master)](https://travis-ci.org/kane-thornwyrd/stapRss)
+=======
+Serverless, decentralized, rss reader.  
+For the lazy enough peoples that avoid using a fullblown software ;)
 
-Serverless, decentralized, rss reader ;)
+Why ?
+-----
+Google Reader will close, and already all the jackals are around to get your personal informations...
+What about using your own capacities to achieve the same stuff... **without server**... **without complex setup**... ?
+
+How ?
+-----
+I assume you have a decent/recent web browser, so, be aware that some functionalities relies on those browsers, like: localstorage, CSS3, etc.
+
+What do I have to do ?
+----------------------
+You can host the stuff by yourself, but I guess you're not interested in such complex operation, so you just have to go on [the official site](kane-thornwyrd.github.com/stapRss).
