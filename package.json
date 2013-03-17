@@ -1,24 +1,45 @@
 {
-  "name" : "stapRss",
-  "description" : "Serverless, decentralized, rss reader",
-  "version" : "0.1",
-  "main" : "stapRss.js",
-  "author" : {
-    "name" : "Jean-Cédric Thérond",
-    "email" : "jean.cedric.t@gmail.com"
+  "name": "stapRss",
+  "description": "Serverless, decentralized, rss reader.",
+  "main": "server.coffee",
+  "author": {
+    "name": "Jean-Cédric Thérond",
+    "email": "jean.cedric.t@gmail.com"
   },
-  "keywords" : [ "Serverless", "decentralized", "rss reader", "google reader", "replacement" ],
-  "licenses" : {
-    "type" : "default"
+  "keywords": [
+    "Serverless",
+    "decentralized",
+    "rss reader",
+    "google reader",
+    "replacement"
+  ],
+  "homepage": "http://kane-thornwyrd.github.com/stapRss",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kane-thornwyrd/stapRss.git"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/kane-thornwyrd/stapRss.git"
+  "bugs": "http://github.com/kane-thornwyrd/stapRss/issues",
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "https://www.gnu.org/licenses/gpl.txt"
+    }
+  ],
+  "scripts": {
+    "start": "coffee server.coffee",
+    "test": "vows --spec",
+    "build": "cake build",
+    "doc": "cake build-doc"
   },
-  "bugs" : {
-    "web" : "http://github.com/kane-thornwyrd/stapRss/issues"
+  "dependencies": {
+    "coffee-script": "1.6.x",
+    "express": "3.1.x",
+    "jade": "x",
+    "less-middleware": "x"
   },
-  "license" : {
-    "type" : "gplv3"
-  }
+  "devDependencies": {
+    "vows": "0.7.x",
+    "docco": "0.6.x"
+  },
+  "engine": "node >= 0.9.1"
 }
