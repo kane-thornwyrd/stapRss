@@ -32,14 +32,7 @@
     "doc": "cake build-doc"
   },
   "dependencies": {
-    "enchilada" : "0.3.x",
-    "connect-compiler" : "0.1.x",
-    "coffeeify" : "0.x.x",
-    "brfs" : "0.0.x",
     "coffee-script": "1.6.x",
-    "express": "3.1.x",
-    "less-middleware": "x",
-    "jade": "x",
     "backbone" : "0.9.x"
   },
   "devDependencies": {
