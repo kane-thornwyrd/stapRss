@@ -21,7 +21,7 @@ http.createServer((request, response)->
   extname     = path.extname filePath
   contentType = CONTENT_TYPES[extname.substring(1)]
 
-  path.exists filePath, (exists)->
+  fs.exists filePath, (exists)->
     if exists
       fs.readFile filePath, (error, content)->
         if error
@@ -34,6 +34,6 @@ http.createServer((request, response)->
       response.writeHead 404
       response.end()
 
-).listen 8125
+).listen 1337
 
-sysout 'Server running at http://127.0.0.1:8125/'
+sysout 'Server running at http://127.0.0.1:1337/'

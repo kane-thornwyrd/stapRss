@@ -27,17 +27,26 @@
   ],
   "scripts": {
     "start": "coffee server.coffee",
-    "test": "vows --spec",
-    "build": "cake build",
-    "doc": "cake build-doc"
+    "build": "grunt build"
   },
   "dependencies": {
-    "coffee-script": "*",
-    "backbone" : "*"
+    "backbone": "*",
+    "underscore": "*"
   },
   "devDependencies": {
-    "vows": "0.7.x",
-    "docco": "0.6.x"
+    "coffee-script": "*",
+    "less": "*",
+    "jade": "*",
+    "grunt": "*",
+    "docco": "*",
+    "grunt-mincer": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jade": "*",
+    "mincer": "*",
+    "backbone.localstorage": "*"
   },
   "engine": "node >= 0.9.1"
 }

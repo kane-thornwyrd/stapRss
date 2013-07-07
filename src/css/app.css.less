@@ -1,0 +1,139 @@
+//= require reset
+//= require kforms
+
+//====================== TOOLBOX START
+.gradient (@start, @end){
+  background: mix(@start, @end);
+  background: -moz-linear-gradient(top,  @start 0%, @end 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@end));
+  background: -webkit-linear-gradient(top,  @start 0%,@end 100%);
+  background: -o-linear-gradient(top,  @start 0%,@end 100%);
+  background: -ms-linear-gradient(top,  @start 0%,@end 100%);
+  background: linear-gradient(to bottom,  @start 0%,@end 100%);
+}
+
+.gradient-image (@start, @end, @imageProp){
+  background: mix(@start, @end) @imageProp;
+  background: -moz-linear-gradient(top,  @start 0%, @end 100%) @imageProp;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(100%,@end)) @imageProp;
+  background: -webkit-linear-gradient(top,  @start 0%,@end 100%) @imageProp;
+  background: -o-linear-gradient(top,  @start 0%,@end 100%) @imageProp;
+  background: linear-gradient(to bottom,  @start 0%,@end 100%) @imageProp;
+}
+
+
+.transition (@settings){
+  -webkit-transition: @settings;
+     -moz-transition: @settings;
+      -ms-transition: @settings;
+       -o-transition: @settings;
+          transition: @settings;
+}
+
+.border-radius(@values){
+  -webkit-border-radius: @values;
+     -moz-border-radius: @values;
+          border-radius: @values;
+}
+
+.box-shadow(@settings){
+  -webkit-box-shadow: @settings;
+     -moz-box-shadow: @settings;
+          box-shadow: @settings;
+}
+
+//====================== TOOLBOX END
+
+@button-size: 64px;
+
+html{
+  font-family: Helvetica, Cabin, Trebuchet, sans-serif;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  .gradient(rgb(10,10,10),rgb(0,0,0));
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/**
+ * Meny
+ */
+
+.meny {
+  display: none;
+  padding: 20px;
+  overflow: auto;
+  .gradient(rgb(200,200,200),rgb(100,100,100));
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  ul {
+    margin-top: 10px;
+    li {
+      display: inline-block;
+      list-style: none;
+      width: @button-size;
+      height: @button-size;
+    }
+  }
+}
+
+.meny-arrow {
+  position: absolute;
+  z-index: 10;
+  border: 10px solid transparent;
+  .transition(opacity 0.4s ease 0.4s);
+}
+
+.meny-arrow-left{
+  border-left: 16px solid #FF7400;
+  left:0;
+}
+.meny-arrow-right{
+  border-right: 16px solid #FF7400;
+  right:0;
+}
+
+.meny-active{
+  .meny-arrow {
+    opacity: 0;
+    .transition(opacity 0.2s ease);
+  }
+}
+
+
+/**
+ * Main contents area
+ */
+.content {
+  padding: 10px;
+  padding-left:25px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  .gradient(rgb(200,200,200),rgb(100,100,100));
+  &>section{
+    display: inline-block;
+    min-height: @button-size;
+    min-width: @button-size;
+    .box-shadow(0px 2px 15px rgba(100, 100, 100, 0.3));
+  }
+}
+
+#add-coverSlip{
+  text-align: center;
+  border: 3px dotted rgba(100, 100, 100, 0.3);
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+  button {
+    min-height: @button-size;
+    min-width: @button-size;
+  }
+}
